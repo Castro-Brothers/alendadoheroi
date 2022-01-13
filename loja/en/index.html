@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A Lenda do Herói - O Jogo</title>
+<script>(function() {
+var _fbq = window._fbq || (window._fbq = []);
+if (!_fbq.loaded) {
+var fbds = document.createElement('script');
+fbds.async = true;
+fbds.src = '//connect.facebook.net/en_US/fbds.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(fbds, s);
+_fbq.loaded = true;
+}
+_fbq.push(['addPixelId', '1487231178230840']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=1487231178230840&amp;ev=PixelInitialized" /></noscript>
+    <meta name="theme-color" content="#b6c3a1">
+    <meta name="author" content="Nuuvem">
+    <meta name="title" content="A Lenda do Herói - O Jogo">
+    <meta name="description" content="A Lenda do Herói é um jogo para PC com músicas dinâmicas, que respondem aos comandos do jogador. Um projeto idealizado por Marcos e Matheus Castro e Dumativa.">
+    <meta name="keywords" content="lenda, herói, jogo, pc, comprar, computador, música, plataforma, marcos castro, matheus castro, castro brothers">
+    <link href='http://fonts.googleapis.com/css?family=Cinzel:400,700,900' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/owl.carousel.ta/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="../bower_components/owl.carousel.ta/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-image-gallery.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-en.css">
+	<script src="scripts/script.js"></script>
+</head>
+
+<body>
+    <a name="topo"></a>
+    <div class="header" id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <nav class="navbar navbar-default">
+                        <div class="container">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#headerMenu">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand internal-link" data-distance="0" href="#header">
+                                    <img src="../images/logo-songs-for-a-hero.png" alt="A Lenda do Herói - O Jogo">
+                                    <img class="navbar-fixed-brand" src="../images/logo-songs-for-a-hero-2.png" alt=" ">
+                                </a>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="headerMenu">
+                                <ul class="nav navbar-nav">
+                                    <li>
+                                        <a class="internal-link" data-distance="60" href="#ojogo">The Game</a>
+                                    </li>
+                                    <li>
+                                        <a class="internal-link" data-distance="100" href="#midia">Gallery</a>
+                                    </li>
+                                    <li>
+                                        <a class="internal-link" data-distance="80" href="#brindes">Free Stuff</a>
+                                    </li>
+                                    <li class="highlight">
+                                        <a class="internal-link"  data-distance="100" href="#prevenda">Pre-order</a>
+                                        </li>
+                                    <li>
+                                        <a class="internal-link" data-distance="80" href="#makingof">Making of</a>
+                                    </li>
+                                    <li class="lang-selector">
+                                        <a class="lang-option lang-selected hidden-xs" href="index.html"><span class="hidden-xs">EN</span> <span class="visible-xs-inline">English Version</span></a>
+                                        <a class="lang-option" href="../index.html"><span class="hidden-xs">PT</span> <span class="visible-xs-inline">Versão em Português</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.navbar-collapse -->
+                        </div>
+                        <!-- /.container-fluid -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="initial">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-10 col-md-offset-1">
+                    <h1>From YouTube to the gaming world <small>A tale of adventure, music and a dash of humor</small></h1>
+                    <div style="width:400px;margin:0 auto;" class="addthis_native_toolbox"></div>
+                </div>
+            </div>
+            <div class="row row-initial-video">
+                <div class="col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                    <div class="initial-video-area">
+                        <!--<img class="iframe-img" src="//img.youtube.com/vi/leD9srixeiw/maxresdefault.jpg" alt="">-->
+                        <!--<iframe src="//www.youtube.com/embed/t-giOM-6NTg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
+                        <div id="player">
+                        </div>
+                    </div>
+                    <!--
+                    <img class="iframe-img" src="//img.youtube.com/vi/t-giOM-6NTg/maxresdefault.jpg" alt="">
+                    <iframe id="yt01" src="//www.youtube.com/embed/t-giOM-6NTg?rel=0&amp;showinfo=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                    <div class="mask-initial-video">
+                        <button class="start-video start-initial-video" data-video="t-giOM-6NTg">Play video</button>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="owl-carousel">
+                        <div>
+                            <blockquote class="testimonial-01">
+                                <p>"Marcos, Matheus, Ronnie and the rest of the guys are great at what they do! They’ve already proved that with the quality content they post on YouTube. That being said, I’m very hopeful they will repeat the feat with the game Songs for a Hero"</p>
+                                <cite><strong>Caio Corraini</strong> game journalist</cite>
+                            </blockquote>
+                        </div>
+                        <div>
+                            <blockquote class="testimonial-02">
+                                <p>"I was obsessed with narrative-driven games like The Stanley Parable and Bastion. It’s an incredibly fun and immersive experience. I believe that Songs for a Hero has all it takes to be the next tier in this captivating game mechanic! A game-opera? Shut up and take my money!"</p>
+                                <cite><strong>Alexandre Ottoni</strong> a.k.a. @jovemnerd</cite>
+                            </blockquote>
+                        </div>
+                        <div>
+                            <blockquote class="testimonial-03">
+                                <p>"I’m thrilled about the game Songs for a Hero, not only because of how successful the animated videos were, but also because I trust the Castro Brothers, their team and their quality assurance!"</p>
+                                <cite><strong>Eduardo Benvenuti (BRKsEDU)</strong> youtuber</cite>
+                            </blockquote>
+                        </div>
+                        <div>
+                            <blockquote class="testimonial-04">
+                                <p>"Marcos, make this game already!"</p>
+                                <cite><strong>Rafinha Bastos</strong> humorist</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a name="ojogo" id="ojogo"></a>
+    <div class="game">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-7">
+                    <h1>The Game</h1>
+                    <p>Flying platforms, colorful enemies, magical weapons and baffling physics. All of that with background music that follows the hero throughout his saga. This is a short summary of what you’ll see in Songs for a Hero - the game, which pays tribute to several classics from the 8 and 16 bits era, like The Legend of Zelda and Wonder Boy in Monster Land, while at the same time making fun of the cliches from the gaming universe.</p>
+                    <p>One of the project’s key features is its dynamic and funny soundtrack - written and performed by the Castro Brothers - that narrates the player’s feats and responds to his inputs, becoming a key element in the story’s progression. Expect all of that plus puzzles, special items, epic battles and everything an awesome video game needs.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-5 col-game-sreenshots hidden-xs">
+                    <img src="../images/o-jogo-01.jpg" alt="">
+                    <img src="../images/o-jogo-02.jpg" alt="">
+                    <img src="../images/o-jogo-03.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <a name="midia" id="midia"></a>
+    <div class="midia">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Gallery</h1>
+                    <div class="midia-video-area">
+                        <!--<img class="iframe-img" src="//img.youtube.com/vi/WAgQM6IH1tM/maxresdefault.jpg" alt="">-->
+                        <!--<iframe id="yt02" src="//www.youtube.com/embed/WAgQM6IH1tM?rel=0&amp;showinfo=0&amp;enablejsapi=1" frameborder="0" allowfullscreen></iframe>-->
+                        <div class="mask-midia-video">
+                            <button class="start-video start-midia-video">Play video</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Videos</h2></div>
+                <div class="col-xs-6 col-sm-3">
+                    <img class="youtube" rel="WAgQM6IH1tM" src="../images/videos/video-01.jpg" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img class="youtube" rel="WAgQM6IH1tM" src="../images/videos/video-02.jpg" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img class="youtube" rel="WAgQM6IH1tM" src="../images/videos/video-03.jpg" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <img class="youtube" rel="WAgQM6IH1tM" src="../images/videos/video-04.jpg" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Screenshots</h2>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="../images/screenshots/ss-01-full.jpg" title="Screenshot 01" data-gallery>
+                        <img src="../images/screenshots/ss-01.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="../images/screenshots/ss-02-full.jpg" title="Screenshot 02" data-gallery>
+                        <img src="../images/screenshots/ss-02.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="../images/screenshots/ss-03-full.jpg" title="Screenshot 03" data-gallery>
+                        <img src="../images/screenshots/ss-03.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="../images/screenshots/ss-04-full.jpg" title="Screenshot 04" data-gallery>
+                        <img src="../images/screenshots/ss-04.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <a href="../images/screenshots/ss-05-full.jpg" title="Screenshot 05" data-gallery>
+                        <img src="../images/screenshots/ss-05.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="../images/screenshots/ss-06-full.jpg" title="Screenshot 06" data-gallery>
+                        <img src="../images/screenshots/ss-06.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="../images/screenshots/ss-07-full.jpg" title="Screenshot 07" data-gallery>
+                        <img src="../images/screenshots/ss-07.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="../images/screenshots/ss-08-full.jpg" title="Screenshot 08" data-gallery>
+                        <img src="../images/screenshots/ss-08.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a name="brindes" id="brindes"></a>
+    <div class="gifts">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Free Stuff</h1>
+                    <h2>The hero wants to spoil you <small>Sign-up to download</small></h2>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="panel panel-soundtrack panel-default">
+                                <div class="panel-body">
+                                    <h3>Bonus track from the OST</h3>
+                                    <p>A game-opera must have a fantastic soundtrack, right? Right! So we’ll give you a sample of it: download for free a track off of the game’s OST!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="panel panel-poster panel-default">
+                                <div class="panel-body">
+                                    <h3>Heroic Digital Poster</h3>
+                                    <p>An epic adventure requires epic loot. Download a digital poster of our hero and decorate your home legendary-style! The best part? It’s free!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-lg btn-primary" href="http://www.nuuvem.com/item/lenda-do-heroi-faixa-bonus-poster-digital?utm_source=lendadoheroi&utm_medium=site&utm_campaign=brindes+lenda+heroi" target="_blank">I Want to download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bonus">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Pre-order Bonuses</h1>
+
+                    <div class="row">
+                        <div class="col-xs-!2 col-sm-6 col-md-3">
+                            <div class="panel panel-soundtrack panel-default">
+                                <div class="panel-body">
+                                    <h3>The Complete OST</h3>
+                                    <p>All the game’s songs in one place! Sing, dance and perform the hero’s narrative, sung and performed by Marcos and Matheus Castro.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="panel panel-artbook panel-default">
+                                <div class="panel-body">
+                                    <h3>Digital Artbook</h3>
+                                    <p>Dive into sketches, conceptual art and behind the scenes commentary from the artists.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="clearfix hidden-md hidden-lg"></span>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="panel panel-nuuvem panel-default">
+                                <div class="panel-body">
+                                    <h3>10% Coupon on Nuuvem</h3>
+                                    <p>We love discounts! Get 10% off when buying any game on Nuuvem. Really.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3">
+                            <div class="panel panel-papertoy panel-default">
+                                <div class="panel-body">
+                                    <h3>Heroic Paper Toy</h3>
+                                    <p>Your crafting skills will be put to the test! Download and print a PDF with the hero’s paper toy. Now fold, cut and glue!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-10 col-md-offset-1">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="panel panel-map panel-default">
+                                        <div class="panel-body">
+                                            <h3>World Map</h3>
+                                            <p>A legend isn’t a legend without a fantastic world. Take a trip - figuratively speaking - through the game’s gorgeous map.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="panel panel-wallpaper panel-default">
+                                        <div class="panel-body">
+                                            <h3>Wallpapers</h3>
+                                            <p>Your house is already decorated, now it’s time for your computer to shine! How about some legendary wallpapers?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="panel panel-campaign panel-default">
+                                        <div class="panel-body">
+                                            <h3>Songs for the Dead Campaign</h3>
+                                            <p>A whole extra campaign, but this time the songs are morbid. Prepare to confront ruthless hordes of undead!</p>
+                                            <p class="premium-only">Only on the premium version</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 col-md-offset-3">
+                            <div class="panel panel-skins panel-default">
+                                <div class="panel-body">
+                                    <h3>Special Skins from Youtubers</h3>
+                                    <p>Have you wondered what it’s like to be a famous youtuber? So now you can go crazy with special skins from the likes of Felipe Neto, Cauê Moura and Jovem Nerd!</p>
+                                    <p class="premium-only">Only on the premium version</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-editions">
+                    <a name="prevenda" id="prevenda"></a>
+                        <div class="col-xs-12">
+                            <h2>Pre-order now on Nuuvem</h2>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="panel panel-standard panel-default">
+                                <div class="panel-body">
+                                    <img src="../images/game-boxshot-01.png" alt="">
+                                    <h3>Standard Edition</h3>
+                                    <div class="description-wrap">
+                                        <p class="desc"><strong>Bonuses:</strong> original soundtrack, digital artbook, Nuuvem coupon, heroic papertoy, world map and wallpapers</p>
+                                    </div>
+                                    <p class="price"><span class="currency">R$</span> 29,<small>99</small></p>
+                                    <a class="btn btn-primary" href="http://www.nuuvem.com/item/lenda-do-heroi-edicao-standard?utm_source=lendadoheroi&utm_medium=site&utm_campaign=standard+lenda+heroi" target="_blank">Buy</a>
+                                    <a href="javascript:void(0);" class="steam-included" data-toggle="popover" data-trigger="click hover" data-placement="bottom" data-content="When you pre-purchase the game, you will also receive a Steam key when the game releases and will be able to activate your game on that platform.">
+                                        <span class="glyphicon glyphicon-info-sign"></span> <strong>Steam</strong> key included
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <div class="panel panel-premium panel-default">
+                                <div class="panel-body">
+                                    <img src="../images/game-boxshot-02.png" alt="">
+                                    <h3>Premium Edition</h3>
+                                    <div class="description-wrap">
+                                        <p class="desc">All the bonuses included in the standard version, plus:</p>
+                                        <ul>
+                                            <li>Songs for the Dead campaign</li>
+                                            <li>Special skins from youtubers</li>
+                                        </ul>
+                                    </div>
+                                    <p class="price"><span class="currency">R$</span> 54,<small>99</small></p>
+                                    <a class="btn btn-primary" href="http://www.nuuvem.com/item/lenda-do-heroi-premium-edition?utm_source=lendadoheroi&utm_medium=site&utm_campaign=premium+lenda+heroi" target="_blank">Buy</a>
+                                    <a href="javascript:void(0);" class="steam-included" data-toggle="popover" data-trigger="click hover" data-placement="bottom" data-content="When you pre-purchase the game, you will also receive a Steam key when the game releases and will be able to activate your game on that platform.">
+                                        <span class="glyphicon glyphicon-info-sign"></span> <strong>Steam</strong> key included
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a name="makingof" id="makingof"></a>
+    <div class="making-of">
+        <div class="container">
+            <div class="col-xs-12">
+                <h1>Making of</h1>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="makingof-video-area">
+                    <!--<img class="iframe-img" src="//img.youtube.com/vi/9XuQK2MC3QA/maxresdefault.jpg" alt="">-->
+                    <!--<iframe src="//www.youtube.com/embed/9XuQK2MC3QA?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
+                    <div class="mask-makingof-video">
+                        <button class="start-video start-makingof-video">Play video</button>
+                    </div>
+                </div>
+
+                <h2>Animated Series</h2>
+                <div class="row row-series">
+                    <div class="col-xs-12 col-sm-6">
+                        <img class="youtube" rel="SX9rSCRiVbc" src="../images/videos/animacoes-01.jpg" alt="">
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <img class="youtube" rel="kg6MIDNCJLg" src="../images/videos/animacoes-02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row row-series">
+                    <div class="col-xs-12 col-sm-6">
+                        <img class="youtube" rel="w0jqhP6rWOE" src="../images/videos/animacoes-03.jpg" alt="">
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <img class="youtube" rel="G_NNp80eC-4" src="../images/videos/animacoes-04.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <p>Songs for a Hero is an animated series created in January 2012 and that has, up until now, 4 episodes and over 4 million views. The project was conceived by Marcos Castro and Matheus Castro, the Castro Brothers, that have a YouTube channel with more than one million subscribers and more than 100 million views all together. Since 2011, the duo produces vlogs, musicals, animations, clips and sketches, always focusing on at least one of these three pillars: humor, music and pop/nerd culture.</p>
+                <p>The game was financed through a crowdfunding campaign on Catarse in September 2014, that broke several records at the time.</p>
+                <h3>Up until today, Songs for a Hero: the game is the project that amassed the biggest number of backers on Catarse. 6112 in total!</h3>
+                <p>The game was born through a partnership between the Castro Brothers and Dumativa studio, that has developed projects that stand out for their gameplay and quality of graphics and soundtrack, such as Dragon Festival.</p>
+            </div>
+        </div>
+    </div>
+    <div class="faq">
+        <div class="container">
+            <div class="col-xs-12 col-md-8">
+                <h1>Faq</h1>
+                <div class="row faq-item">
+                    <div class="col-xs-12">
+                        <h2><span class="faq-number">1</span> What are the advantages of getting the game as a pre-order?</h2>
+                        <div class="faq-answer">
+                            <p>If you get the game during pre-order, besides getting it for a cheaper price than the release price, you’ll get the following bonuses: original soundtrack for download, digital artbook, a paper toy of the hero that you can print and assemble, the game map and several wallpapers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row faq-item">
+                    <div class="col-xs-12">
+                        <h2><span class="faq-number">2</span> After pre-ordering, where will I download the game?</h2>
+                        <div class="faq-answer">
+                            <p>You will be able to download the game to your computer through Nuuvem. Additionally, you’ll also be able to activate and download Songs for a Hero through Steam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row faq-item">
+                    <div class="col-xs-12">
+                        <h2><span class="faq-number">3</span> I bought the game but I can’t play it. Why?</h2>
+                        <div class="faq-answer">
+                            <p>This is a pre-order. The game is expected to be released in Q1 2016. You will receive the game's key close to the release date.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row faq-item">
+                    <div class="col-xs-12">
+                        <h2><span class="faq-number">4</span> When will I have access to the preorder bonuses?</h2>
+                        <div class="faq-answer">
+                            <p>As soon as the game is released, that is, in Q1 2016.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row faq-item">
+                    <div class="col-xs-12">
+                        <h2><span class="faq-number">5</span> I want to play it on Steam, what should I do?</h2>
+                        <div class="faq-answer">
+                            <p>Simple. When you buy the game, you’ll receive a Steam key, and you’ll add this code to the platform. To do that open Steam and click on the Games tab and then “Activate a game on Steam”. Follow the instructions and you’ll have your copy of Songs for Hero on Steam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row faq-item">
+                    <div class="col-xs-12">
+                        <h2><span class="faq-number">6</span> Will I be able to activate the DLCs I bought through Nuuvem on Steam?</h2>
+                        <div class="faq-answer">
+                            <p>Yes. Even though some DLCs aren’t sold on Steam because they’re exclusive do Nuuvem (like the Youtuber skins), this doesn’t stop you from activating them on Steam with the DLC’s Steam key.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row faq-item">
+                    <div class="col-xs-12">
+                        <h2><span class="faq-number">7</span> When do you expect to release the DLCs?</h2>
+                        <div class="faq-answer">
+                            <p>The skins will be available on launch. The extra campaign Songs for the Dead will be released later.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row faq-item">
+                    <div class="col-xs-12">
+                        <h2><span class="faq-number">8</span> When will the game be released?</h2>
+                        <div class="faq-answer">
+                            <p>The estimated release date is January 2016.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row faq-item">
+                    <div class="col-xs-12">
+                        <h2><span class="faq-number">9</span> The game will be available for which platforms?</h2>
+                        <div class="faq-answer">
+                            <p>Windows, Mac and Linux.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row faq-item">
+                    <div class="col-xs-12">
+                        <h2><span class="faq-number">10</span> How do I get the free digital poster and bonus track through Nuuvem?</h2>
+                        <div class="faq-answer">
+                            <p>Just go to Nuuvem and add the <a href="http://www.nuuvem.com/item/lenda-do-heroi-faixa-bonus-poster-digital" target="_blank">free product</a> to the cart. If you are already have a Nuuvem account, you’ll just have to “checkout”. In case you don’t have one, you’ll have to sign up before you’re able to “checkout”. Then go to <a href="https://secure.nuuvem.com/account/library" target="_blank">My Games</a> to download your free goodies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row faq-item">
+                    <div class="col-xs-12">
+                        <h2><span class="faq-number">11</span> Will the game be available in English?</h2>
+                        <div class="faq-answer">
+                            <p>Yes, but the English version will only be available after the release of the Portuguese version. There isn’t a release date for it yet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row faq-item">
+                    <div class="col-xs-12">
+                        <h2><span class="faq-number">12</span> People who supported the project through Catarse will get the premium or standard edition?</h2>
+                        <div class="faq-answer">
+                            <p>People who pledged the Metamorfo tier (R$50 or more), will receive the premium edition. Whoever backed the project with a smaller amount than that, will receive the standard edition + the DLC Songs for the Dead.</p>
+                        </div>
+                    </div>
+                </div>
+                <a id="faqMore" class="btn btn-primary" href="#">See more</a>
+            </div>
+            <div class="col-xs-12 col-md-4 col-contact">
+                <h1>Give us a shout!</h1>
+                <ul>
+                    <li>In case you’re from the press or want official information, send an email to <a href="mailto:imprensa@castrobrothers.com.br">imprensa@castrobrothers.com.br</a></li>
+                    <li>In case you want to talk to the game’s team, send an email to <a href="mailto:alendadoheroi@nuuvem.com.br">alendadoheroi@nuuvem.com.br</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                    <div class="row row-sponsor">
+                        <div class="col-xs-12 col-sm-8 col-md-9">
+                            <p> <span>Created by:</span>
+                                <a href="https://www.youtube.com/user/marcoscct" target="_blank"><img src="../images/marca-castro-brothers.png" alt="Castro Brothers"></a>
+                                <a href="http://www.dumativa.com.br" target="_blank"><img src="../images/marca-dumativa.png" alt="Dumativa Studio de Criação"></a>
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-3">
+                            <p> <span>Supported by:</span>
+                                <a href="http://www.nuuvem.com/" target="_blank"><img src="../images/marca-nuuvem.png" alt="Nuuvem"></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row row-copyright">
+                        <div class="col-xs-12">
+                            <p>Songs for a Hero © 2015 Castro Brothers. Developed by Dumativa Estúdio de Criação. All other commercial trademarks and copyrights are a property of their respective owners. All rights reserved.</p>
+                            <p>CASTRO BROTHERS LOGO, DUMATIVA LOGO, NUUVEM LOGO and all the related characters and elements are registered trademarks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+        <!-- The container for the modal slides -->
+        <div class="slides"></div>
+        <!-- Controls for the borderless lightbox -->
+        <h3 class="title"></h3>
+        <a class="prev">‹</a>
+        <a class="next">›</a>
+        <a class="close">×</a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+        <!-- The modal dialog, which will be used to wrap the lightbox content -->
+        <div class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title"></h4>
+                    </div>
+                    <div class="modal-body next"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default pull-left prev">
+                            <i class="glyphicon glyphicon-chevron-left"></i> Anterior
+                        </button>
+                        <button type="button" class="btn btn-primary next">
+                            Próximo
+                            <i class="glyphicon glyphicon-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Google Analytics: change UA-64869441-2 to be your site's ID -->
+    <script>
+    ! function(A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+                (A[l].q = A[l].q || []).push(arguments)
+            }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-64869441-2');
+    ga('send', 'pageview');
+    </script>
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/owl.carousel.ta/owl-carousel/owl.carousel.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../scripts/bootstrap.youtubepopup.min.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src- "../bootstra-image-gallery.min.js"></script>
+    <script src="../scripts/scripts.js"></script>
+    <!-- Google Code for Remarketing Tag -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55a94885585be7cb" async="async"></script>
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 967236326;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '420px',
+          width: '100%',
+          videoId: 'leD9srixeiw',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+          event.target.mute();
+           //event.target.setVolume(0);
+           event.target.playVideo();
+      }
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      var done = false;
+      function onPlayerStateChange(event) {
+        console.log(event, YT.PlayerState);
+
+        // 5.1 Autoplay
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+           done = true;
+        }
+        // 5.2 Play by user
+        else if (event.data == YT.PlayerState.PLAYING && done) {
+          event.target.unMute();
+        }
+      }
+    </script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/967236326/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+</body>
+
+</html>
